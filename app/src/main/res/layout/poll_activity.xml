@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    tools:context=".poll_activity"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/task_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        app:cardBackgroundColor="@color/cardColor"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        >
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".MainActivity"
+    >
+
+    <Space
+        android:id="@+id/card_space1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+                android:id="@+id/pollQ_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="How can we control the spread of COVID-19 in our workplace?"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
+                app:layout_constraintTop_toBottomOf="@+id/card_space1"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+            <SeekBar
+                android:id="@+id/voteOption1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="25"
+                android:max="100"
+                android:layout_marginTop="16dp"
+                android:thumb="@android:color/transparent"
+                android:progressDrawable="@drawable/progress_tracker"
+                app:layout_constraintTop_toBottomOf="@+id/pollQ_textview"
+                app:layout_constraintStart_toStartOf="parent"
+
+                />
+            <TextView
+                android:id="@+id/option1_textview"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:paddingStart="32dp"
+                android:paddingEnd="0dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="Via mandating masks."
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/pollQ_textview"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/option1_amt_textview"
+
+                />
+            <TextView
+                android:id="@+id/option1_amt_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="32dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:textColor="@color/primaryTextColor"
+                android:text="25%"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/pollQ_textview"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                />
+    <SeekBar
+        android:id="@+id/voteOption2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:max="100"
+        android:layout_marginTop="16dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_tracker"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption1"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/option2_textview"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/primaryTextColor"
+        android:text="Via installation of sanitiser stations."
+        app:layout_constraintTop_toBottomOf="@+id/voteOption1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option2_amt_textview"
+
+        />
+    <TextView
+        android:id="@+id/option2_amt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center_vertical"
+        android:text="25%"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption1"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <SeekBar
+        android:id="@+id/voteOption3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:max="100"
+        android:layout_marginTop="16dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_tracker"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption2"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/option3_textview"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/primaryTextColor"
+        android:gravity="center_vertical"
+        android:text="Regular health checks."
+        app:layout_constraintTop_toBottomOf="@+id/voteOption2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option3_amt_textview"
+
+        />
+    <TextView
+        android:id="@+id/option3_amt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:textColor="@color/primaryTextColor"
+        android:text="25%"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption2"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <SeekBar
+        android:id="@+id/voteOption4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="25"
+        android:max="100"
+        android:layout_marginTop="16dp"
+        android:thumb="@android:color/transparent"
+        android:progressDrawable="@drawable/progress_tracker"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption3"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/option4_textview"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="0dp"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="Mandating work from home."
+        app:layout_constraintTop_toBottomOf="@+id/voteOption3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/option4_amt_textview"
+
+        />
+    <TextView
+        android:id="@+id/option4_amt_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryTextColor"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:text="25%"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption3"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <Space
+        android:id="@+id/card_space2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/voteOption4"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

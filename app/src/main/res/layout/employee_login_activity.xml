@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EmployeeLoginActivity"
+    android:background="@color/backgroundColor">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"/>
+            <EditText
+                android:id="@+id/edittext_email_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Employee ID"
+                android:inputType="textEmailAddress"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryColor"
+                />
+
+            <EditText
+                android:id="@+id/edittext_password_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:layout_marginBottom="20dp"
+                android:inputType="textPassword"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textColor="@color/primaryTextColor"
+                android:textColorHint="@color/primaryColor"
+                />
+            <Button
+                android:id="@+id/buttonLoginFinal_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYEE SIGN IN/UP"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/primaryTextColor"
+                android:background="@color/primaryColor"
+                />
+
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Progressbar_employee"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

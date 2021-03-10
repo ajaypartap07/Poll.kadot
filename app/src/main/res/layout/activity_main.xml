@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    app:titleTextColor="@color/primaryTextColor"
+    android:background="@color/backgroundColor">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                />
+
+            <TextView
+                android:id="@+id/welcometextview"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Choose option for login:"
+                android:textSize="20dp"
+                android:textColor="@color/primaryTextColor"/>
+            <Button
+                android:id="@+id/buttonLoginManager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager Login"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/primaryTextColor"
+                />
+            <Button
+                android:id="@+id/buttonLoginEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee Login"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/primaryTextColor"
+                />
+        <Button
+            android:id="@+id/buttonLoginAnon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anonymous Login"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:textAlignment="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/primaryTextColor"
+            />
+
+            <TextView
+                android:id="@+id/signuptextview"
+                android:layout_width="match_parent"
+                android:layout_height="83dp"
+
+                android:gravity="center"
+                android:text="Don't have an account? Sign UP"
+                android:textSize="20dp"
+                android:textColor="@color/primaryTextColor"/>
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Progressbar"
+            android:layout_gravity="center"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="64dp"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>
